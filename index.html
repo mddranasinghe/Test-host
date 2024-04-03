@@ -6,6 +6,7 @@
     
     <style>
         #right_path{ height: 80px; width:100px; border-style: solid; border-color: rgb(193, 203, 205); border-top: none; border-left:none ; border-width: 5px; margin-right: 20px; margin-bottom: 10%;}
+        #left_path{ height: 80px; border-style: solid; border-color:rgb(193, 203, 205); border-top: none; border-right: none; border-width: 5px; margin-left: 20px; margin-bottom: 10%; }
 
 
     
@@ -20,7 +21,12 @@
         border-image: linear-gradient(var(--angle), #dcd4e0, #0505d4) 1;
         animation: 1s rotate linear infinite;
       }
-      
+      #left_path {
+        --angle: 0deg;
+        --rotation-angle: 360deg;
+        border-image: linear-gradient(var(--angle), #dcd4e0, #0505d4) 1;
+        animation: 1s rotate linear infinite;
+      }
       @keyframes rotate {
         to {
             --angle: var(--rotation-angle);
@@ -37,9 +43,18 @@
 </head>
 <body>
     <table><tr><td> 
-        <img src="../resources/image/solar.svg" id="image_solar" alt="Power" onclick="Details_menu_solar()" ontouchstart="addHoverClass('image_solar')" ontouchend="removeHoverClass('image_solar')" >
+        <img src="resources/image/solar.svg" id="image_solar" alt="Power" onclick="Details_menu_solar()" ontouchstart="addHoverClass('image_solar')" ontouchend="removeHoverClass('image_solar')" >
 
         <div id="right_path"></div>
+        
+    </td>
+    
+    
+    
+    <td> 
+        <img src="resources/image/solar.svg" id="image_solar" alt="Power" onclick="Details_menu_solar()" ontouchstart="addHoverClass('image_solar')" ontouchend="removeHoverClass('image_solar')" >
+
+        <div id="left_path"></div>
         
     </td></tr></table>
    
