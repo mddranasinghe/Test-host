@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <style>html {
+    <style>
+    #a{       width: 50vmin;
+        height: 50vmin;
+        border: 1rem solid;}
+    
+    html {
         display: grid;
         place-items: center;
         min-height: 100vh;
       }
       #a {
         --angle: 0deg;
-      
+        width: 50vmin;
+        height: 50vmin;
+        border: 1rem solid;
         border-image: linear-gradient(var(--angle), #12c2e9, #c471ed, #f64f59) 1;
         animation: 5s rotate linear infinite;
       }
@@ -31,8 +38,6 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="a" style=" width: 50vmin;
-        height: 50vmin;
-        border: 1rem solid;"></div>
+    <div id="a"></div>
 </body>
 </html>
