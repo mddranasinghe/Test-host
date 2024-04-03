@@ -16,14 +16,14 @@
       }
       #a {
         --angle: 0deg;
-
-        border-image: linear-gradient(var(--angle), #12c2e9, #c471ed, #f64f59) 1;
+        --rotation-angle: 360deg;
+        border-image: linear-gradient(var(--angle), #dcd4e0, #0505d4) 1;
         animation: 5s rotate linear infinite;
       }
       
       @keyframes rotate {
         to {
-          --angle: 360deg;
+            --angle: var(--rotation-angle);
         }
       }
       @property --angle {
